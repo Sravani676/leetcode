@@ -9,6 +9,7 @@ if len(needle) is greater than haystack
 if len(haystack) is empty
 '''
 # first solution is using the python's inbuilt function find, which returns the starting index of the needle
+#Time complexity: O(1), space complexity: None
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         if len(needle) > len(haystack):
@@ -22,6 +23,7 @@ class Solution:
             
             
 # second solution is using the sliding window approach, by searching every substring with the len(needle) in the haystack
+#Time complexity: O(n), Space complexity: None
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         #if the lengths of the needle and haystack are equal
