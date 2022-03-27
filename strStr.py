@@ -23,7 +23,7 @@ class Solution:
             
             
 # second solution is using the sliding window approach, by searching every substring with the len(needle) in the haystack
-#Time complexity: O(n), Space complexity: None
+#Time complexity: O(n*m), Space complexity: O(1)
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         #if the lengths of the needle and haystack are equal
